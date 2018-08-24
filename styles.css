@@ -11,25 +11,36 @@ br {
 .calc {
     margin: 0 auto;
     margin-top: 40px;
-    background-color: #AAAAAA;
+    border-radius: 20px;
+    background-color: rgb(89, 154, 228);
     width: 450px;
-    height: 650px;
+    height: 435px;
 }
 
 .display,
 #expression {
     margin: 0 auto;
+    margin-top: 30px;
     height: 55px;
+    /*background-color: rgb(135, 179, 153);*/
+    font-size: 24pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #818181;
+    color: rgb(27, 27, 27);
 }
 
 .display {
-    margin-top: 40px;
+    margin-top: 30px;
+    height: 55px;
     width: 85%;
+    border-radius: 20px;
 }
 
 .control,
 #panel {
-    margin: 0 auto;
+    margin: 60px auto;
+    margin-right: 10px;
     width: 400px;
     height: 400px;
 }
@@ -50,11 +61,12 @@ br {
     font-weight: 800;
     cursor: pointer;
     text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
+    transition: background 250ms ease-in-out, transform 150ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+
+.press:active {}
 
 .op {
     border: 0px solid #c42f2f;
